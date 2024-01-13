@@ -1,5 +1,3 @@
-# Prometheus-Grafna-Testing
-
 # Prometheus-Grafana System Monitoring Tool
 
 ## Overview
