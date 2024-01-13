@@ -21,5 +21,3 @@ echo "Configure your prometheus.yml file to scrape data from localhost:8000."
 echo "Run Grafana using Docker with: docker run -d -p 3000:3000 grafana/grafana"
 echo "Access Grafana at http://localhost:3000 (default credentials: admin/admin)"
 echo "In Grafana, add Prometheus as a data source with URL: http://host.docker.internal:9090"
-
-#
