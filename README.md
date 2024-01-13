@@ -15,8 +15,20 @@ Welcome to the Prometheus-Grafana System Monitoring Tool! This innovative tool i
 The `system_usage.py` script collects various system metrics. These metrics are then exposed via a Prometheus-compatible endpoint, ready for scraping. Prometheus collects and stores this data, allowing Grafana to present it in a series of elegant, easy-to-understand dashboards.
 
 ## Quick Start
+
+**Run Setup.sh for fast execution** 
+Open a Terminal and navigate to the directory where setup.sh is saved.
+Give execute permissions to the script:
+
+bash
+chmod +x setup.sh
+
+bash
+./setup.sh
+
+
 **Clone the Repository**:
-   ```bash
+```   bash
    git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
 
 Install Dependencies:
@@ -43,3 +55,4 @@ Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check issues page.
 Contribute with Pull Requests.
 
+```
