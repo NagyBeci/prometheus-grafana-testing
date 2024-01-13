@@ -2,16 +2,20 @@ name: Python CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout # Using the latest version of the "checkout" action
+      with:
+        ref: main
+        node-version: 16  # Specify the Node.js version here
 
     - name: Set up Python
       uses: actions/setup-python@v2
