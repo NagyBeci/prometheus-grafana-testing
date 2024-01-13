@@ -1,11 +1,19 @@
 #!/bin/bash
 
-# Clone the GitHub Repository
-echo "Cloning the GitHub repository..."
-git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
+# Define the repository directory
+REPO_DIR="Prometheus-Grafna-Testing"
+
+# Check if the 'Prometheus-Grafna-Testing' directory exists
+if [ ! -d "$REPO_DIR" ]; then
+    # Clone the GitHub Repository
+    echo "Cloning the GitHub repository..."
+    git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
+else
+    echo "Repository already cloned. Skipping cloning step."
+fi
 
 # Navigate to the Cloned Directory
-cd Prometheus-Grafna-Testing || exit
+cd "$REPO_DIR" || exit
 
 # Install Python Dependencies
 echo "Installing Python dependencies..."

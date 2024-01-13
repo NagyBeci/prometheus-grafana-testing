@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3 # Now using checkout@v3
+      uses: actions/checkout@v4 # Now using checkout@v4
       with:
         ref: main
         node-version: 16  # Specify the Node.js version here
