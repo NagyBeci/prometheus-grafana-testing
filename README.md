@@ -17,7 +17,7 @@ The `system_usage.py` script collects various system metrics. These metrics are 
 ## Quick Start
 **Clone the Repository**:
    ```bash
-   git clone https://github.com/NagyBeci/Prometheus-Grafana-SyntheticTrafic.git
+   git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
 
 Install Dependencies:
 Navigate to the cloned directory and install necessary Python packages:
@@ -26,14 +26,20 @@ bash:
 pip install -r requirements.txt
 
 Run the Monitoring Script:
-bash
+bash:
 python src/system_usage.py
 
 Configure Prometheus:
-Update your prometheus.yml to scrape data from this tool.
+Download Prometheus at "https://prometheus.io/download/" to monitor applications, webpages and more ...
+Update your prometheus.yml bith in your Prometheus Library and in your system monitoring config file to scrape data from this tool.
 
 Visualize with Grafana:
-Connect Grafana to your Prometheus instance and create dashboards to visualize the data.
+Connect to Grafana with "docker run -d -p 3000:3000 grafana/grafana"
+Connect Grafana to Prometheus through "http://host.docker.internal:9090". 
+Update Our Grafana will be running through docker and will be monitoring a locally ran Python Program "system_usage.py".
+Credentials are "admin ; admin" click Skip, it runs locally anyway.
 
 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check issues page.
+Contribute with Pull Requests.
+

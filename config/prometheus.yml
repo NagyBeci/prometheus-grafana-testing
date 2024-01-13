@@ -1,7 +1,7 @@
 global:
-  scrape_interval: 15s
+  scrape_interval: 15s  # Set the scrape interval to 15 seconds
 
 scrape_configs:
-  - job_name: 'python_system_usage'
+  - job_name: 'system_usage'
     static_configs:
       - targets: ['localhost:8000']
