@@ -1,9 +1,15 @@
-# Clone the GitHub Repository
-Write-Host "Cloning the GitHub repository..."
-git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
+# Check if the 'Prometheus-Grafna-Testing' directory exists
+$repoPath = "Prometheus-Grafna-Testing"
+if (-Not (Test-Path -Path $repoPath)) {
+    # Clone the GitHub Repository
+    Write-Host "Cloning the GitHub repository..."
+    git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
+} else {
+    Write-Host "Repository already cloned. Skipping cloning step."
+}
 
 # Navigate to the Cloned Directory
-Set-Location -Path "Prometheus-Grafna-Testing" -ErrorAction Stop
+Set-Location -Path $repoPath -ErrorAction Stop
 
 # Install Python Dependencies
 Write-Host "Installing Python dependencies..."

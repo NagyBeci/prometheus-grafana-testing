@@ -13,6 +13,14 @@ Welcome to the Prometheus-Grafana System Monitoring Tool! This innovative tool i
 The `system_usage.py` script collects various system metrics. These metrics are then exposed via a Prometheus-compatible endpoint, ready for scraping. Prometheus collects and stores this data, allowing Grafana to present it in a series of elegant, easy-to-understand dashboards.
 
 ## Quick Start
+**Run script.sh on Windows Power Shell**
+Download script.sh into a folder and run in through Power Shell to Clone the Repo and Run it after it is cloned.
+If the Repo was already cloned it will not download it again.
+Git Bash is a Bash emulation used to run Git from the command line. If it’s installed on your system, you can use it to run Bash scripts:
+
+Right-click on the folder containing your script.
+Select 'Git Bash Here'.
+Run the script using ./script.sh.
 
 **Run Setup.sh for fast execution** 
 Open a Terminal and navigate to the directory where setup.sh is saved.
