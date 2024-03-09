@@ -35,7 +35,7 @@ bash
 
 **Clone the Repository**:
 ```   bash
-   git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
+git clone https://github.com/NagyBeci/Prometheus-Grafna-Testing
 
 Install Dependencies:
 Navigate to the cloned directory and install necessary Python packages:
